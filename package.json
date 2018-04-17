@@ -1,0 +1,31 @@
+{
+  "name": "wechat-qna-builder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "crypto": "^1.0.1",
+    "express": "^4.16.3",
+    "http": "0.0.0",
+    "https": "^1.0.0",
+    "querystring": "^0.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node index.js",
+    "start-test":"node testserver.js"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MS-CSE-GCR/wechat-QnA-builder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MS-CSE-GCR/wechat-QnA-builder/issues"
+  },
+  "homepage": "https://github.com/MS-CSE-GCR/wechat-QnA-builder#readme"
+}

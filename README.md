@@ -19,7 +19,7 @@
 
 ###### Azure webapp setting screenshot
 
-![azure webapp setting screenshot](/app setting.PNG)
+![azure webapp setting screenshot](/appsetting.PNG)
 
 ###### Wechat setting screenshot
 

@@ -18,10 +18,12 @@
 
 
 ###### Azure webapp setting screenshot
-![azure webapp setting screenshot](/images/app setting.png)
+
+![azure webapp setting screenshot](/app setting.PNG)
 
 ###### Wechat setting screenshot
-![wechat setting screenshot](/images/wechat.png)
+
+![wechat setting screenshot](/wechat.PNG)
 
 
 For information about using this template, see [Deploy a web app linked to a GitHub repository](https://azure.microsoft.com/en-us/documentation/articles/app-service-web-arm-from-github-provision/).

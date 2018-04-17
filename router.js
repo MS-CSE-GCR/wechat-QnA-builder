@@ -9,6 +9,32 @@ const token = process.env.Wechat_Token;
 const qnakey1 = process.env.Ocp_Apim_Subscription_Key;
 const qnakey2 = process.env.QnA_Maker_Key;
 
+const welcome = `
+<h5>Welcome to use the Wechat open account QnA backend. You need to finish the follow steps.<h5>
+<ul>
+    <li>
+    Create your QnA App at <a target="_blank" href = "https://qnamaker.ai">https://qnamaker.ai</a>, and publish app to get the 'Ocp-Apim-Subscription-Key' and 'QnA-Maker-Key'.
+    </li>
+    <li>
+    Create your WeChat open account <a target="_blank" href = "https://mp.weixin.qq.com">https://mp.weixin.qq.com</a>, and set yuor app token.
+    </li>
+    <li>
+    Go to Azure portal <a target="_blank" href = "https://portal.azure.com">https://portal.azure.com</a>, and find this WebApp in the "Application settings" tab create the following new "Application settings".
+        <ul>
+            <li>
+            Wechat_Token='Your Wechat_Token'
+            </li>
+            <li>
+            Ocp_Apim_Subscription_Key='Your Ocp-Apim-Subscription-Key'
+            </li>
+            <li>
+            QnA_Maker_Key='Your QnA Maker Key'
+            </li>
+        </ul>
+    </li>
+</ul>
+`;
+
 router.get('/', function (req, res, next) {
 
     var signature = req.query.signature;
@@ -26,7 +52,8 @@ router.get('/', function (req, res, next) {
     if (code === signature) {
         res.send(echostr)
     } else {
-        res.send("error");
+        res.writeHead(200, { 'Content-Type': 'application/html' });
+        res.send(welcome);
     }
 
 });

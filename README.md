@@ -1,9 +1,11 @@
-### Deploy a wechat QnA public account backend to Azure
-### It's codeless!
+## Deploy a wechat QnA public account backend to Azure
+## It's codeless!
 
 [![Deploy to Azure](https://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/)
 
+#### Click the button above, to deploy the wechat open account backend to Azure. 
 
+### Chinese is supported by Azure QnA Maker!!!
 
 ##### Welcome to use the Wechat open account QnA backend. You need to finish the follow steps after you deploy the WebApp to Azure.
 

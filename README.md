@@ -17,13 +17,17 @@
 
 
 
-###### Azure webapp setting screenshot
+###### Azure webapp setting screenshot to set variables
 
 ![azure webapp setting screenshot](/appsetting.PNG)
 
-###### Wechat setting screenshot
+###### Wechat setting screenshot to set WeChat Token
 
 ![wechat setting screenshot](/wechat.PNG)
+
+###### QnA maker screenshot to get Ocp-Apim-Subscription-Key and  QnA Maker Key
+
+![wechat setting screenshot](/QnA.PNG)
 
 
 For information about using this template, see [Deploy a web app linked to a GitHub repository](https://azure.microsoft.com/en-us/documentation/articles/app-service-web-arm-from-github-provision/).

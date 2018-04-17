@@ -5,6 +5,8 @@
   "main": "index.js",
   "dependencies": {
     "axios": "^0.18.0",
+    "body-parser": "^1.18.2",
+    "body-parser-xml": "^1.1.0",
     "crypto": "^1.0.1",
     "express": "^4.16.3",
     "http": "0.0.0",
@@ -14,9 +16,8 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"node index.js",
-    "start-test":"node testserver.js"
-
+    "start": "node index.js",
+    "start-test": "node testserver.js"
   },
   "repository": {
     "type": "git",

@@ -1,4 +1,5 @@
-# Deploy a wechat QnA public account backend to Azure, codeless!
+### Deploy a wechat QnA public account backend to Azure
+### It's codeless!
 
 [![Deploy to Azure](https://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/)
 
@@ -13,6 +14,14 @@
     - Ocp_Apim_Subscription_Key='Your Ocp-Apim-Subscription-Key'
     - QnA_Maker_Key='Your QnA Maker Key'
 - Done!
+
+
+
+###### Azure webapp setting screenshot
+![azure webapp setting screenshot](/images/app setting.png)
+
+###### Wechat setting screenshot
+![wechat setting screenshot](/images/wechat.png)
 
 
 For information about using this template, see [Deploy a web app linked to a GitHub repository](https://azure.microsoft.com/en-us/documentation/articles/app-service-web-arm-from-github-provision/).

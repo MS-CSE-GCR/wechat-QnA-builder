@@ -10,7 +10,7 @@ const qnakey1 = process.env.Ocp_Apim_Subscription_Key;
 const qnakey2 = process.env.QnA_Maker_Key;
 
 const welcome = `
-<h5>Welcome to use the Wechat open account QnA backend. You need to finish the follow steps.<h5>
+<h4>Welcome to use the Wechat open account QnA backend. You need to finish the follow steps.</h4>
 <ul>
     <li>
     Create your QnA App at <a target="_blank" href = "https://qnamaker.ai">https://qnamaker.ai</a>, and publish app to get the 'Ocp-Apim-Subscription-Key' and 'QnA-Maker-Key'.
@@ -32,7 +32,15 @@ const welcome = `
             </li>
         </ul>
     </li>
+    <li>
+    Done!
+    </li>
 </ul>
+
+<p>Click <a target="_blank" href="/check" >here</a> to check if you have all the settings variables.</p>
+<p>Click <a target="_blank" href="/test/Hi" >here</a> to Check if the QnA works.</p>
+
+Please give star to the repo <a target="_blank" href="https://github.com/MS-CSE-GCR/wechat-QnA-builder">https://github.com/MS-CSE-GCR/wechat-QnA-builder</a>
 `;
 
 router.get('/', function (req, res, next) {
@@ -52,8 +60,8 @@ router.get('/', function (req, res, next) {
     if (code === signature) {
         res.send(echostr)
     } else {
-        res.writeHead(200, { 'Content-Type': 'application/html' });
-        res.send(welcome);
+        res.writeHead(200, { 'Content-Type': 'text/html' });
+        res.end(welcome);
     }
 
 });
